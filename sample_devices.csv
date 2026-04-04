@@ -1,0 +1,26 @@
+Device Name,Device Type,Manufacturer / Model,Network Segment,OS/Firmware,Patchable,Vendor Support Status,PHI Handling,FDA Class,Last Vulnerability Scan,Authentication,Encryption
+ICU Ventilator #1,Ventilator,Hamilton Medical C6,Clinical VLAN,Embedded RTOS,Vendor-Only,Active,Read-Only,III,2025-11-15,Local Auth,In-Transit Only
+ICU Ventilator #2,Ventilator,Getinge Servo-u,Clinical VLAN,Embedded RTOS,Vendor-Only,Active,Read-Only,III,2025-08-20,Local Auth,In-Transit Only
+ER Infusion Pump #1,Infusion Pump,BD Alaris 8015,Flat Network,Windows CE/IoT,No,End of Life,Transmit,II,2023-03-10,Default Creds,None
+ER Infusion Pump #2,Infusion Pump,Baxter Sigma Spectrum,Clinical VLAN,Embedded RTOS,Vendor-Only,Active,Read-Write,II,2025-10-05,Local Auth,In-Transit Only
+ICU Patient Monitor #1,Patient Monitor,Philips IntelliVue MX800,Clinical VLAN,Proprietary,Vendor-Only,Active,Read-Only,II,2025-12-01,AD/LDAP,Both
+ICU Patient Monitor #2,Patient Monitor,GE CARESCAPE B850,Internet-Facing,Windows CE/IoT,No,End of Life,Read-Write,II,2023-06-15,Default Creds,None
+ER Patient Monitor #3,Patient Monitor,Nihon Kohden NK-HiQ,Clinical VLAN,Embedded RTOS,Vendor-Only,Active,Read-Only,II,2025-09-18,Local Auth,In-Transit Only
+Radiology PACS Server,PACS Imaging,Fujifilm Synapse,DMZ,Linux,Yes,Active,Transmit,II,2026-01-20,AD/LDAP,Both
+Radiology CT Scanner,PACS Imaging,Siemens SOMATOM X.cite,Clinical VLAN,Windows 10/11,Vendor-Only,Active,Read-Write,II,2025-07-12,AD/LDAP,In-Transit Only
+Radiology Portable X-Ray,PACS Imaging,GE Optima XR240amx,Guest WiFi,Windows CE/IoT,No,Limited,Read-Only,II,2024-09-01,Default Creds,None
+Lab Analyzer #1,Lab Analyzer,Roche cobas 6800,Clinical VLAN,Windows 10/11,Yes,Active,Transmit,II,2026-02-10,AD/LDAP,Both
+Lab Analyzer #2,Lab Analyzer,Abbott Alinity ci,Clinical VLAN,Proprietary,Vendor-Only,Active,Read-Write,II,2025-05-25,Local Auth,In-Transit Only
+Lab Analyzer #3 (Legacy),Lab Analyzer,Beckman Coulter DxC 700,Flat Network,Windows CE/IoT,No,End of Life,Read-Write,I,,Default Creds,None
+Blood Gas Analyzer,Lab Analyzer,Siemens RAPIDPoint 500e,Clinical VLAN,Embedded RTOS,Vendor-Only,Active,Read-Only,II,2025-11-02,Local Auth,In-Transit Only
+Smart Bed Ward 3A #1,Smart Bed,Hill-Rom Centrella,Clinical VLAN,Embedded RTOS,Vendor-Only,Active,Read-Only,I,,Local Auth,None
+Smart Bed Ward 3A #2,Smart Bed,Stryker InTouch,Clinical VLAN,Embedded RTOS,Vendor-Only,Active,None,I,,Local Auth,None
+Smart Bed ICU #3,Smart Bed,Hill-Rom Progressa,Clinical VLAN,Embedded RTOS,Vendor-Only,Active,Read-Only,I,2025-06-14,Local Auth,In-Transit Only
+Nurse Call System,Nurse Call,Rauland Responder 5,Flat Network,Proprietary,No,Limited,None,N/A,,None,None
+Nurse Call Wireless,Nurse Call,Hill-Rom Voalte,Clinical VLAN,Linux,Yes,Active,None,N/A,2025-10-30,AD/LDAP,In-Transit Only
+Building HVAC Controller,Building Automation,Johnson Controls Metasys,Internet-Facing,Proprietary,No,Limited,None,N/A,2024-01-15,Default Creds,None
+Building Access Control,Building Automation,Honeywell Pro-Watch,DMZ,Windows 10/11,Yes,Active,None,N/A,2025-12-20,AD/LDAP,Both
+Pharmacy Dispensing Unit,Infusion Pump,Omnicell XT,Clinical VLAN,Windows 10/11,Yes,Active,Read-Write,N/A,2026-01-05,AD/LDAP,Both
+Wearable Telemetry #1,Wearable Sensor,Philips BX100,Clinical VLAN,Embedded RTOS,No,Active,Transmit,II,2025-04-18,Local Auth,In-Transit Only
+Wearable Glucose Monitor,Wearable Sensor,Dexcom G7 Receiver,Guest WiFi,Embedded RTOS,No,Active,Read-Write,III,,None,None
+Surgical Robot Interface,Custom,Intuitive da Vinci Xi,Air-Gapped,Linux,Vendor-Only,Active,Read-Only,III,2026-03-01,MFA,Both
