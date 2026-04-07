@@ -211,6 +211,91 @@ iomt-risk-scorer/
 
 ---
 
+
+---
+
+## System Requirements
+
+| Requirement | Details |
+|---|---|
+| **Python** | 3.11 or higher ([python.org](https://www.python.org/downloads/)) |
+| **pip** | Included with Python — used to install dependencies |
+| **Operating System** | Windows, macOS, or Linux |
+| **Disk Space** | ~100 MB (including dependencies — Streamlit and Plotly are larger packages) |
+| **RAM** | 512 MB minimum |
+| **Network** | Required only for initial `pip install`. The app itself runs offline. Streamlit binds to `localhost:8501` by default. |
+
+### Installation
+
+```bash
+git clone https://github.com/itsnmills/iomt-risk-scorer.git
+cd iomt-risk-scorer
+pip install -r requirements.txt
+```
+
+### Dependencies
+
+All dependencies are standard, widely-used Python packages:
+
+| Package | What It Does | Why It's Needed |
+|---|---|---|
+| `streamlit` | Web UI framework | Powers the interactive browser-based dashboard at `localhost:8501` |
+| `pandas` | Data processing | Handles device inventory data (CSV import, filtering, scoring) |
+| `plotly` | Interactive charts | Renders risk distribution charts, heatmaps, radar charts, and histograms |
+| `reportlab` | PDF generation | Creates the downloadable risk assessment PDF report |
+| `numpy` | Numerical computation | Supports scoring calculations |
+
+---
+
+## What This Tool Accesses On Your System
+
+This tool runs 100% locally on your machine. Here is exactly what it reads, writes, and accesses:
+
+| What | Access Type | Details |
+|---|---|---|
+| **CSV files you upload** | Read | If you upload a device inventory CSV, it is read into memory for scoring. The file is not copied, stored, or transmitted anywhere. |
+| **Browser (localhost:8501)** | Network (local only) | Streamlit serves the dashboard on `localhost` — it is not accessible from other machines or the internet unless you explicitly configure it to be. |
+| **Local filesystem** | Write | PDF reports are generated and downloaded through your browser's standard download dialog. |
+| **No external APIs** | None | This tool makes zero outbound network requests. No device data, risk scores, or inventory information are sent anywhere. |
+| **No telemetry** | None | No analytics, tracking, crash reporting, or phone-home behavior of any kind. |
+
+**Sample data mode:** The tool includes 25 realistic but entirely fictional hospital devices (fake device names, fake serial numbers, fake network configurations) for demonstration purposes. No real hospital or device data is involved.
+
+---
+
+## Privacy & Open Source Transparency
+
+**This is open-source software. You download it, you run it, you own it.**
+
+| Concern | Answer |
+|---|---|
+| **Can the developer see my data?** | No. This tool runs entirely on your machine. The developer (or anyone else) has zero access to your data, your results, or your system. |
+| **Does it phone home?** | No. There are no analytics, telemetry, crash reporting, update checks, or network calls of any kind. |
+| **Is my data stored in the cloud?** | No. All data stays on your local machine in files you can inspect, move, back up, or delete at any time. |
+| **Can I audit the code?** | Yes. Every line of source code is available in this repository. The MIT license gives you the right to use, modify, and distribute it. |
+| **Is it safe to use with real organizational data?** | Yes — but as with any tool, follow your organization's data handling policies. Since everything runs locally, your data never leaves your control. |
+
+> **If you're evaluating this tool for your organization:** Download it, review the source code, run the demo mode first, and verify for yourself that it meets your security requirements. That's the entire point of open source.
+
+## Keeping Threat Intelligence & Regulatory Data Current
+
+The risk scoring engine and recommended controls are mapped to:
+- **NIST Cybersecurity Framework (CSF) 2.0**
+- **HIPAA Security Rule** (45 CFR §164)
+- **FDA premarket cybersecurity guidance**
+
+Scoring weights are fully tunable via the sidebar to match your organization's risk appetite. When frameworks are updated, the repository will be updated accordingly:
+
+```bash
+git pull origin main
+```
+
+---
+
+## Security
+
+If you discover a security vulnerability in this tool, please report it responsibly by opening a GitHub issue or contacting the maintainer directly. Do not submit PHI or real patient data in bug reports.
+
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
