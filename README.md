@@ -304,6 +304,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Author
 
-**Nathan Mills** — Security+ Certified
+**Noah Mills** — Security+ Certified
 
 Built as a healthcare cybersecurity portfolio project demonstrating practical risk assessment tooling for IoMT environments.

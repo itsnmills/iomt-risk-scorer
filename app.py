@@ -6,7 +6,7 @@ A healthcare cybersecurity risk scoring tool for Internet of Medical Things devi
 Score and prioritize your hospital's IoMT risks in 5 minutes.
 Transparent, tunable, patient-safety focused.
 
-Author: Nathan Mills
+Author: Noah Mills
 """
 
 import streamlit as st
@@ -254,7 +254,7 @@ with st.sidebar:
         st.warning("All weights are zero!")
 
     st.divider()
-    st.caption("Built by Nathan Mills")
+    st.caption("Built by Noah Mills")
     st.caption("Security+ Certified")
 
 
@@ -754,7 +754,7 @@ elif page == "📄 Assessment Report":
         with col1:
             org_name = st.text_input("Organization Name", "General Hospital", key="org_name")
         with col2:
-            assessor_name = st.text_input("Assessor Name", "Nathan Mills", key="assessor_name")
+            assessor_name = st.text_input("Assessor Name", "Noah Mills", key="assessor_name")
 
         st.divider()
 

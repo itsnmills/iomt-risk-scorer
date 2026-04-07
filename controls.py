@@ -4,7 +4,7 @@ IoMT Recommended Controls Engine
 Maps device risk factors to specific, actionable security controls
 with NIST CSF 2.0 and HIPAA Security Rule citations.
 
-Author: Nathan Mills
+Author: Noah Mills
 """
 
 from typing import List, Dict

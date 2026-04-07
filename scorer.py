@@ -10,7 +10,7 @@ Methodology informed by:
 - HHS 405(d) HICP (Health Industry Cybersecurity Practices)
 - HIPAA Security Rule (45 CFR §164.308-312)
 
-Author: Nathan Mills
+Author: Noah Mills
 """
 
 from dataclasses import dataclass, field

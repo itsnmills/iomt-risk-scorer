@@ -3,7 +3,7 @@ IoMT Risk Assessment Report Generator
 ======================================
 Generates a professional PDF risk assessment report using ReportLab.
 
-Author: Nathan Mills
+Author: Noah Mills
 """
 
 import io
